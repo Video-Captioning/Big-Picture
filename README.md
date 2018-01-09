@@ -39,7 +39,7 @@ A few techniques will be needed in order to achieve our goal:
 
 ### Step 2: Extract still images from the video
 
-Since our video is nearly two hours long, let's grab an excerpt of just a few minutes, and sample a few frames per second from that excerpt. See the [Video Excerpting repository](https://github.com/KarlEdwards/Practical-VLC.git)
+Since our video is nearly two hours long, let's grab an excerpt of just a few minutes, and sample a few frames per second from that excerpt. See the Video Excerpting repository, [Practical-VLC](https://github.com/KarlEdwards/Practical-VLC.git)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ yields a series of a few hundred frames from the video, each frame in a file hav
 ### Step 3: Extract Features From Images
 Next, we are going to use a pre-trained model to extract features from the images we just excerpted from the video.
 
-See the [Feature Extraction repository](https://github.com/KarlEdwards/ImageFeatures.git)
+See the Feature Extraction repository, [ImageFeatures](https://github.com/KarlEdwards/ImageFeatures.git)
 
 1. Activate TensorFlow:
 `$ source ~/tensorflow/bin/activate`
