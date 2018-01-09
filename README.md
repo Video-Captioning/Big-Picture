@@ -55,7 +55,7 @@ Putting it all together as follows:
 
 yields a series of a few hundred frames from the video, each frame in a file having a name like frame_0####.png
 
-### Step 3: Feature Extraction
+### Step 3: Extract Features From Images
 Next, we are going to use a pre-trained model to extract features from the images we just excerpted from the video.
 
 See the [Feature Extraction repository](https://github.com/KarlEdwards/ImageFeatures.git)
@@ -123,8 +123,8 @@ $ for model in XCEPTION VGG16 VGG19 RESNET50 INCEPTIONV3 INCEPTIONRESNETV2 MOBIL
 
 Let's see what VGG16 can do!
 
-### Step 4: Image Classification
-See the Image Classification and Collage respository
+### Step 4: Classify the Images
+See the Image Classification and Collage repository
 
 ### Step 5: Learning Where to Look
 
