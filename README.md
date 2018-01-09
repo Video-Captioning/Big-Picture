@@ -127,6 +127,9 @@ Let's see what VGG16 can do!
 See the Image Classification and Collage repository
 
 1. Use the scikit-learn implementation of K-means clustering
+
+`python3 cluster.py ../ImageFeatures-working/features/features_vgg16.csv -k 90 -o labels_vgg16_90.csv`
+
 * cluster.py
 * all_clusters.sh
 * collage.py
