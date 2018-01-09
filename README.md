@@ -126,6 +126,36 @@ Let's see what VGG16 can do!
 ### Step 4: Classify the Images
 See the Image Classification and Collage repository
 
+1. Use the scikit-learn implementation of K-means clustering
+* cluster.py
+* all_clusters.sh
+* collage.py
+* all_collages.sh
+
+`$ python3 cluster.py features_vgg16.csv -k 2 -o labels_vgg16.csv`
+
+```bash
+for n in 90 80 70 60 50 40 30 25 20 15 10 05 
+do
+ echo 'python3 cluster.py features_vgg16.csv -k '$n' -o labels_vgg16_'$n'.csv'
+done
+```
+
+```bash
+python3 cluster.py features_vgg16.csv -k 90 -o labels_vgg16_90.csv
+python3 cluster.py features_vgg16.csv -k 80 -o labels_vgg16_80.csv
+python3 cluster.py features_vgg16.csv -k 70 -o labels_vgg16_70.csv
+python3 cluster.py features_vgg16.csv -k 60 -o labels_vgg16_60.csv
+python3 cluster.py features_vgg16.csv -k 50 -o labels_vgg16_50.csv
+python3 cluster.py features_vgg16.csv -k 40 -o labels_vgg16_40.csv
+python3 cluster.py features_vgg16.csv -k 30 -o labels_vgg16_30.csv
+python3 cluster.py features_vgg16.csv -k 25 -o labels_vgg16_25.csv
+python3 cluster.py features_vgg16.csv -k 20 -o labels_vgg16_20.csv
+python3 cluster.py features_vgg16.csv -k 15 -o labels_vgg16_15.csv
+python3 cluster.py features_vgg16.csv -k 10 -o labels_vgg16_10.csv
+python3 cluster.py features_vgg16.csv -k 05 -o labels_vgg16_05.csv
+```
+
 ### Step 5: Learning Where to Look
 
 ### Step 6: Captioning
@@ -147,9 +177,22 @@ See the Image Classification and Collage repository
 * SMC Version (system):	2.24f32
 
 ### Bibliography
+Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011
+@article{scikit-learn,
+ title={Scikit-learn: Machine Learning in {P}ython},
+ author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+ journal={Journal of Machine Learning Research},
+ volume={12},
+ pages={2825--2830},
+ year={2011}
+}
 
 ### Toolbox
 * [VLC](https://www.videolan.org/vlc/index.html)-2.2.8
 * [Tensorflow](https://www.tensorflow.org/install/install_mac)
 * [Python3](https://wsvincent.com/install-python3-mac/)
+* [scikit-learn](http://scikit-learn.org/stable/)
 
