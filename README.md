@@ -177,7 +177,7 @@ python3 cluster.py features_vgg16.csv -k 05 -o labels_vgg16_05.csv
 * SMC Version (system):	2.24f32
 
 ### Bibliography
-Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011
+* Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011
 @article{scikit-learn,
  title={Scikit-learn: Machine Learning in {P}ython},
  author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
@@ -190,9 +190,18 @@ Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-28
  year={2011}
 }
 
+* Keras
+@misc{chollet2015keras,
+  title={Keras},
+  author={Chollet, Fran\c{c}ois and others},
+  year={2015},
+  publisher={GitHub},
+  howpublished={\url{https://github.com/keras-team/keras}},
+}
+
 ### Toolbox
 * [VLC](https://www.videolan.org/vlc/index.html)-2.2.8
 * [Tensorflow](https://www.tensorflow.org/install/install_mac)
 * [Python3](https://wsvincent.com/install-python3-mac/)
 * [scikit-learn](http://scikit-learn.org/stable/)
-
+* [keras](https://keras.io/applications/)
