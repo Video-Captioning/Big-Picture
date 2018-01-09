@@ -199,6 +199,12 @@ python3 cluster.py features_vgg16.csv -k 05 -o labels_vgg16_05.csv
 * Yeung, S., Russakovsky, O., Jin, N., Andriluka, M., Mori, G., Fei-Fei, L.: Every moment counts: dense detailed labeling of actions in complex videos (2015). arXiv preprint arXiv:1507.05738
 
 * Yeung, S., Russakovsky, O., Mori, G., Fei-Fei, L.: End-to-end learning of action detection from frame glimpses in videos. In: CVPR (2016)
+@article{yeung2015end,
+  title={End-to-end Learning of Action Detection from Frame Glimpses in Videos},
+  author={Yeung, Serena and Russakovsky, Olga and Mori, Greg and Fei-Fei, Li},
+  journal={arXiv preprint arXiv:1511.06984},
+  year={2015}
+}
 
 * Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011
 @article{scikit-learn,
