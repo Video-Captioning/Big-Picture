@@ -1,5 +1,5 @@
 # Video-Captioning
-Identify and describe the most interesting moments in sports videos
+## Identify and describe the most interesting moments in sports videos
 --------
 
 To illustrate the concepts, let's focus on this specific application:
@@ -11,14 +11,18 @@ To illustrate the concepts, let's focus on this specific application:
 
 --------
 
-### Inspiration
+## Inspiration
 During MLConf Seattle May 19, 2017, Serena Yeung's presentation, 'Towards Scaling Video Understanding' piqued my curiosity.
 Soon after the conference, I read a paper she co-authored, 'End-to-end Learning of Action Detection from Frame Glimpses in Videos.' CVPR 2016 Yeung, Russakovsky, Mori, Fei-Fei.
 The basic idea is to peek at the video for a few frames at an arbitrarily selected point in time,
 then look at another point some distance away in order to learn how far, and in which direction,
 to look for something interesting to annotate.
 
-### Initial Exploration
+--------
+
+## Step-By-Step Exploration
+
+### Step 1: Get some video
 First, we will need some data. Let's use the [Women's Final from the 2015 National Championships](https://www.youtube.com/watch?v=ULzQS2rv34s), in which Boston Brute Squad takes on Seattle Riot in Frisco, Texas.
 
 One way to save a video from the web is to use the command-line interface to VLC, for example:
@@ -33,12 +37,28 @@ A few techniques will be needed in order to achieve our goal:
 * Learning Where to Look
 * Captioning
 
-#### Video Excerpting
-See the Video Excerpting respository
-Since our video is nearly two hours long, let's grab an excerpt of just a few minutes, and sample a few frames per second from that excerpt.
+### Step 2: Extract still images from the video
 
-#### Feature Extraction
-See the Feature Extraction repository
+Since our video is nearly two hours long, let's grab an excerpt of just a few minutes, and sample a few frames per second from that excerpt. See the [Video Excerpting repository](https://github.com/KarlEdwards/Practical-VLC.git)
+
+#### Parameters
+
+* Input: `~/VLC_stuff/2015bsVriot.mp4`
+* Start time: `3600` ( seconds from beginning of video )
+* Duration: `60` ( seconds )
+* Output: `./`  ( current directory )
+
+#### Execution
+Putting it all together as follows:
+
+```$ sh excerpt.sh ~/VLC_stuff/2015bsVriot.mp4 ./ 3600 60```
+
+yields a series of a few hundred frames from the video, each frame in a file having a name like frame_0####.png
+
+### Step 3: Feature Extraction
+Next, we are going to use a pre-trained model to extract features from the images we just excerpted from the video.
+
+See the [Feature Extraction repository](https://github.com/KarlEdwards/ImageFeatures.git)
 
 1. Activate TensorFlow:
 `$ source ~/tensorflow/bin/activate`
@@ -56,7 +76,7 @@ do
 done
 ```
 
-This script produces a script to repeat the process for all models. Why write a script to produce another script? To allow for a sanity-check before starting a time-consuming process.
+This script produces another script to repeat the process for all models. Why write a script to produce another script? To allow for a sanity-check before starting a time-consuming process.
 
 ```
 python3 -W "ignore:compiletime:RuntimeWarning::0" im2fea.py -m XCEPTION --path ~/VLC_stuff/frames/2015bsVriot_play --output features_XCEPTION.csv
@@ -101,16 +121,18 @@ $ for model in XCEPTION VGG16 VGG19 RESNET50 INCEPTIONV3 INCEPTIONRESNETV2 MOBIL
            MOBILENET	1025
 ```
 
-Let's see what VGG can do!
+Let's see what VGG16 can do!
 
-#### Image Classification
+### Step 4: Image Classification
 See the Image Classification and Collage respository
 
-#### Learning Where to Look
+### Step 5: Learning Where to Look
 
-#### Captioning
+### Step 6: Captioning
 
-### Hardware & Configuration
+--------
+
+## Hardware & Configuration
 
 * Model Name:	Mac mini
 * Model Identifier:	Macmini7,1
