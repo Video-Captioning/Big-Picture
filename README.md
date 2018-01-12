@@ -4,46 +4,9 @@
 [Overview](Overview.md)
 --------
 
-To illustrate the concepts, let's focus on this specific application:
-
-* The sport of Ultimate Frisbee, specifically women's ultimate
-* Interesting moments: 
-  - During Play: Pulls, Catches, Layouts
-  - Between Plays: Scoreboard, High-Fives, Fans in Stands, Miscellaneous
-
---------
-
-## Inspiration
-During MLConf Seattle May 19, 2017, Serena Yeung's presentation, 'Towards Scaling Video Understanding' piqued my curiosity.
-Soon after the conference, I read a paper she co-authored, 'End-to-end learning of action detection from frame glimpses in videos'.
-
-The main idea is
-  an observation network encodes visual representations of video frames
-  a recurrent network sequentially processes these observations and decides both which frame to observe next and when to emit a prediction.
-
-  Beginning at an arbitrarily selected point in the video, repeat the following:
-    examine a few frames to find out which actions are occurring at that point in time
-    decide where to look next, i.e., ahead or behind, and by how far
-  Once the prediction confidence has improved sufficiently, output the prediction
-  
---------
+[Obtain video content](Get Content.md)
 
 ## Step-By-Step Exploration
-
-### Step 1: Get some video
-First, we will need some data. Let's use the [Women's Final from the 2015 National Championships](https://www.youtube.com/watch?v=ULzQS2rv34s), in which Boston Brute Squad takes on Seattle Riot in Frisco, Texas.
-
-One way to save a video from the web is to use the command-line interface to VLC, for example:
-```bash
-$ vlc -v -I rc --no-sout-audio --sout='#transcode{ vcodec=h264, vb=800, scale=1 }:std{ access=file,
-mux=ts, dst=/path/to/resulting/video.mp4 }' https://www.youtube.com/watch?v=ULzQS2rv34s/ vlc://quit
-```
-A few techniques will be needed in order to achieve our goal: 
-* Video Excerpting
-* Feature Extraction
-* Image Classification
-* Learning Where to Look
-* Captioning
 
 ### Step 2: Extract still images from the video
 
