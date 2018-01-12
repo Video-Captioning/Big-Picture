@@ -31,4 +31,9 @@
   howpublished={\url{https://github.com/keras-team/keras}},
 }
 
+* A Survey on Content-aware Video Analysis for Sports
+Huang-Chia Shih
+IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS FOR VIDEO TECHNOLOGY, VOL. 99, NO. 9, JANUARY 2017
+https://arxiv.org/pdf/1703.01170.pdf
+
 [back](README.md)
