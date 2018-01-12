@@ -13,7 +13,6 @@
 [Classify Images](Classify-Images.md)
 
 [Learning Where to Look](Where-To-Look-Next.md)
-# Learning Where to Look
 
 [Captioning](Captioning.md)
 # Captioning
