@@ -6,11 +6,8 @@ See the Feature Extraction repository, [ImageFeatures](https://github.com/KarlEd
 1. Activate TensorFlow:
 `$ source ~/tensorflow/bin/activate`
 
-2. Extract features, in this case, using MOBILENET:
+2. Extract features, in this case, using VGG16:
 
-    `python3 im2fea.py -m MOBILENET --path /to/image/files/ --output features_mobilenet.csv`
-
-   For VGG16, with our data:
     `python3 im2fea.py -m VGG16 --path ./data/2_images/ --output ./data/3_features/features_VGG16.csv`
 
 3. Now repeat for all available models
