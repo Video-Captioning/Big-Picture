@@ -15,8 +15,6 @@
 [Learning Where to Look](Where-To-Look-Next.md)
 
 [Captioning](Captioning.md)
-# Captioning
-[back](README.md)
 
 [Hardware & Configuration](Hardware-And-Config.md)
 
