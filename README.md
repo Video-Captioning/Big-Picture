@@ -12,14 +12,16 @@
 
 [Classify Images](Classify-Images.md)
 
-### Step 5: Learning Where to Look
+[Learning Where to Look](Where-To-Look-Next.md)
+# Learning Where to Look
 
-### Step 6: Captioning
+[Captioning](Captioning.md)
+# Captioning
+[back](README.md)
 
---------
+[Hardware & Configuration](Hardware-And-Config.md)
 
-## Hardware & Configuration
-
+# Hardware & Configuration
 * Model Name:	Mac mini
 * Model Identifier:	Macmini7,1
 * Processor Name:	Intel Core i7
@@ -32,7 +34,11 @@
 * Boot ROM Version:	MM71.0220.B07
 * SMC Version (system):	2.24f32
 
-### Bibliography
+[back](README.md)
+
+[Bibliography](Bibliography.md)
+
+# Bibliography
 * Yeung, S., Russakovsky, O., Jin, N., Andriluka, M., Mori, G., Fei-Fei, L.: Every moment counts: dense detailed labeling of actions in complex videos (2015). arXiv preprint arXiv:1507.05738
 
 * Yeung, S., Russakovsky, O., Mori, G., Fei-Fei, L.: End-to-end learning of action detection from frame glimpses in videos. In: CVPR (2016)
@@ -65,9 +71,6 @@
   howpublished={\url{https://github.com/keras-team/keras}},
 }
 
-### Toolbox
-* [VLC](https://www.videolan.org/vlc/index.html)-2.2.8
-* [Tensorflow](https://www.tensorflow.org/install/install_mac)
-* [Python3](https://wsvincent.com/install-python3-mac/)
-* [scikit-learn](http://scikit-learn.org/stable/)
-* [keras](https://keras.io/applications/)
+[back](README.md)
+
+[Toolbox]
