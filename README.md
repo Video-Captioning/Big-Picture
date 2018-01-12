@@ -4,7 +4,7 @@
 [Overview](Overview.md)
 --------
 
-[Obtain video content](Get Content.md)
+[Obtain video content](Get-Content.md)
 
 ## Step-By-Step Exploration
 
