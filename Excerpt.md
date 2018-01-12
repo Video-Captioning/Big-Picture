@@ -12,7 +12,7 @@ Since our video is nearly two hours long, let's grab an excerpt of just a few mi
 #### Execution
 Putting it all together as follows:
 
-```$ sh excerpt.sh ~/VLC_stuff/2015bsVriot.mp4 ./ 3600 60```
+```$ sh excerpt.sh ./data/1_video/2015bsVriot.mp4 ./data/2_images/ 500 300```
 
 yields a series of a few hundred frames from the video, each frame in a file having a name like frame_0####.png
 
