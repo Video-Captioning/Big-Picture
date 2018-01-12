@@ -25,4 +25,11 @@ The main idea is
   Once the prediction confidence has improved sufficiently, output the prediction
   
 --------
+A few techniques will be needed in order to achieve our goal: 
+* Video Excerpting
+* Feature Extraction
+* Image Classification
+* Learning Where to Look
+* Captioning
+
 [back to README](README.md)
