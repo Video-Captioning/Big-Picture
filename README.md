@@ -30,10 +30,18 @@
 
 4. Train an SVM classifier on one category of examples, and then find similar images in the whole set, for example, fans in stands.
 
-
+In general:
 `$ python3 images_like_this.py path/to/images/ path/to/exemplars/ feature/file.csv --output collage.png`
 
-`$ python3 images_like_this.py ./data/2_images/ ./data/5_exemplars/ ./data/3_features/features_VGG16.csv --output collage.png`
+Specifically:
+`$ python3 images_like_this.py ./data/2_images/ ./data/0_training/ ./data/3_features/features_VGG16.csv --output collage.png`
+
+Here are the training examples:
+![Examples](./figures/positive_fansinstands.png?raw=true "Examples")
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
+
+And here are the similar images:
+![Predicted](./figures/predicted_fansinstands.png?raw=true "Predicted")
 
 5. Evaluate the accuracy of the classifier
 
