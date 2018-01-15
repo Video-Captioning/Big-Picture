@@ -38,16 +38,15 @@ Specifically:
 
 Here are the training examples:
 ![Examples](./figures/positive_fansinstands.png?raw=true "Examples")
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
 
 And here are the similar images:
-![Predicted](./figures/predicted_fansinstands.png?raw=true "Predicted")
+![Results](./figures/predicted_fansinstands.png?raw=true "Results")
 
 5. Evaluate the accuracy of the classifier
 
-## Other
-[Classify Images](Classify-Images.md)
+The resulting images are similar to the examples, just not in the way I had envisioned! 'Group of people' might be a better description for the category.
 
+## Other
 [Learning Where to Look](Where-To-Look-Next.md)
 
 [Captioning](Captioning.md)
