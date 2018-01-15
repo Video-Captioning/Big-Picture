@@ -34,7 +34,7 @@ In general:
 `$ python3 images_like_this.py path/to/images/ path/to/exemplars/ feature/file.csv --output collage.png`
 
 Specifically:
-`$ python3 images_like_this.py ./data/2_images/ ./data/0_training/ ./data/3_features/features_VGG16.csv --output collage.png`
+`$ python3 images_like_this.py ./data/2_images/ ./data/0_training/fansinstands/ ./data/3_features/features_VGG16.csv --output collage.png`
 
 Here are the training examples:
 ![Examples](./figures/positive_fansinstands.png?raw=true "Examples")
@@ -42,9 +42,9 @@ Here are the training examples:
 And here are the similar images:
 ![Results](./figures/predicted_fansinstands.png?raw=true "Results")
 
-5. Evaluate the accuracy of the classifier
+## Evaluate the accuracy of the classifier
 
-The resulting images are similar to the examples, just not in the way I had envisioned! 'Group of people' might be a better description for the category.
+The resulting images are similar to the examples, just not in the way I had envisioned! 'Group of people' might be a better description for the category. The results for the other categories were not encouraging. To capture small details, such as a disc, I think semantic segmentation might be a better approach.
 
 ## Other
 [Learning Where to Look](Where-To-Look-Next.md)
