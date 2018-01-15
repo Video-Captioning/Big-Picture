@@ -12,7 +12,7 @@
 
 `$ python3 -W "ignore:compiletime:RuntimeWarning::0" im2fea.py -m VGG16 --path ./data/2_images/ --output ./data/3_features/features_vgg16.csv`
 
-4. Manually collect images to use as training examples
+3. Manually collect images to use as training examples
 ```
  |-data
  |---0_training
@@ -28,15 +28,14 @@
  |-----pull
 ```
 
-5. Train an SVM classifier on these examples
+4. Train an SVM classifier on one category of examples, and then find similar images in the whole set, for example, fans in stands.
+
 
 `$ python3 images_like_this.py path/to/images/ path/to/exemplars/ feature/file.csv --output collage.png`
 
 `$ python3 images_like_this.py ./data/2_images/ ./data/5_exemplars/ ./data/3_features/features_VGG16.csv --output collage.png`
 
-6. For a whole set of images, find those which are a given category, for example, fans in stands.
-
-7. Evaluate the accuracy of the classifier
+5. Evaluate the accuracy of the classifier
 
 ## Other
 [Classify Images](Classify-Images.md)
