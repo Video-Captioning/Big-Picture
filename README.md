@@ -44,7 +44,17 @@ And here are the similar images:
 
 ## Evaluate the accuracy of the classifier
 
-The resulting images are similar to the examples, just not in the way I had envisioned! 'Group of people' might be a better description for the category. The results for the other categories were not encouraging. To capture small details, such as a disc, I think semantic segmentation might be a better approach.
+The resulting images are similar to the examples, just not in the way I had envisioned! 'Group of people' might be a better description for the category. The results for the other categories were not encouraging. To capture small details, such as a disc, let's try a different approach.
+
+## Histograms of Oriented Gradients (HoG)
+
+Instead of using features extracted using a pre-trained VGG16 model, compute HoGs as follows:
+
+`./HoG.R  -o ./data/3_features/HoG.csv ./data/2_images/`
+
+Then try re-clustering:
+`$ python3 images_like_this.py ./data/2_images/ ./data/0_training/fansinstands/ ./data/3_features/HoG.csv --output collage.png`
+
 
 ## Other
 [Learning Where to Look](Where-To-Look-Next.md)
