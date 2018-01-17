@@ -24,7 +24,6 @@ Using Histograms of Oriented Gradients:
 `$ ./images_like_this.py ./data/2_images/ ./data/0_training/announcer/ ./data/3_features/HoG_09cells_09bins.csv`
 
 ### Results -- FAILURE
-![Predicted](figures/Experiment2_predicted_announcer.png)
 
 Found features for 3471 images.
 730 features per image.
@@ -38,7 +37,6 @@ Using Histograms of Oriented Gradients:
 `$ ./images_like_this.py ./data/2_images/ ./data/0_training/announcer/ ./data/3_features/HoG_09cells_09bins.csv`
 
 ### Results -- FAILURE
-![Predicted](figures/Experiment2_predicted_highfive.png)
 
 Found features for 3471 images.
 730 features per image.
