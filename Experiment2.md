@@ -12,6 +12,8 @@
 ./HoG.R --cells=4  --bins=9 -o ./data/3_features/HoG_04cells_05bins.csv ./data/2_images/
 ./HoG.R --cells=9  --bins=9 -o ./data/3_features/HoG_09cells_05bins.csv ./data/2_images/
 ./HoG.R --cells=16 --bins=9 -o ./data/3_features/HoG_16cells_05bins.csv ./data/2_images/
+
+./HoG.R --cells=25 --bins=9 -o ./data/3_features/HoG_25cells_05bins.csv ./data/2_images/
 ```
 
 2. Then try re-clustering:
