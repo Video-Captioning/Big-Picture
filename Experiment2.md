@@ -25,6 +25,8 @@ Using Histograms of Oriented Gradients:
 `$ ./images_like_this.py ./data/2_images/ ./data/0_training/disc/ ./data/3_features/HoG_09cells_09bins.csv`
 
 ### Results
+![Predicted](Experiment2_predicted_disc.png)
+
 Found features for 3471 images.
 730 features per image.
 Given 125 exemplars
