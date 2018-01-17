@@ -1,4 +1,4 @@
-# Background
+# Project Overview
 ## Video-Captioning
 --------
 
@@ -32,6 +32,4 @@ A few techniques will be needed in order to achieve our goal:
 * Learning Where to Look
 * Captioning
 
-[back to README](README.md)
-
-See [Overview](Overview.md)
+See [Experiments](Experiment-List.md)
