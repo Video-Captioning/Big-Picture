@@ -53,7 +53,7 @@ Instead of using features extracted using a pre-trained VGG16 model, compute HoG
 `./HoG.R  -o ./data/3_features/HoG.csv ./data/2_images/`
 
 Then try re-clustering:
-`$ python3 images_like_this.py ./data/2_images/ ./data/0_training/fansinstands/ ./data/3_features/HoG.csv --output collage.png`
+`$ python3 images_like_this.py ./data/2_images/ ./data/0_training/fansinstands/ ./data/3_features/HoG.csv --output collage.png --collage Yes`
 
 
 ## Other
