@@ -16,6 +16,35 @@
 
 2. Then try re-clustering:
 
+### Find Announcer
+Using Histograms of Oriented Gradients:
+
+`$ ./images_like_this.py ./data/2_images/ ./data/0_training/announcer/ ./data/3_features/HoG_09cells_09bins.csv`
+
+### Results -- FAILURE
+![Predicted](figures/Experiment2_predicted_announcer.png)
+
+Found features for 3471 images.
+730 features per image.
+Given 225 exemplars
+  and 337 non-exemplars
+Predicted 7 images containing announcers, of which NONE were confirmed by inspection. 
+
+### Find High-Five
+Using Histograms of Oriented Gradients:
+
+`$ ./images_like_this.py ./data/2_images/ ./data/0_training/announcer/ ./data/3_features/HoG_09cells_09bins.csv`
+
+### Results -- FAILURE
+![Predicted](figures/Experiment2_predicted_highfive.png)
+
+Found features for 3471 images.
+730 features per image.
+Given 26 exemplars
+  and 39 non-exemplars
+Predicted 92 images containing announcers, of which only 7 were confirmed by inspection. 
+
+### Find Disc
 In general:
 
 `$ ./images_like_this.py path/to/images/ path/to/exemplars/ feature/file.csv`
@@ -24,7 +53,7 @@ Using Histograms of Oriented Gradients:
 
 `$ ./images_like_this.py ./data/2_images/ ./data/0_training/disc/ ./data/3_features/HoG_09cells_09bins.csv`
 
-### Results
+### Results -- SUCCESS!
 ![Predicted](figures/Experiment2_predicted_disc.png)
 
 Found features for 3471 images.
