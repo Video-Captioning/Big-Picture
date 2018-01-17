@@ -26,7 +26,7 @@ The main idea is
   
 --------
 A few techniques will be needed in order to achieve our goal: 
-* Video Excerpting
+* [Video Excerpting](Excerpt.md)
 * Feature Extraction
 * Image Classification
 * Learning Where to Look
