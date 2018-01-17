@@ -1,4 +1,4 @@
-# Configurations
+# Experimental Configurations
 
 ## Configuration A -- 3471 images from 2015bsVriot.mp4
 
