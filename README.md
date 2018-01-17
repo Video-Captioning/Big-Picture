@@ -53,9 +53,10 @@ Instead of using features extracted using a pre-trained VGG16 model, compute HoG
 `./HoG.R  -o ./data/3_features/HoG.csv ./data/2_images/`
 
 Then try re-clustering:
+
 `$ ./HoG.R  --cells=1 --bins=9 -o ./data/3_features/HoG_01cells_09bins.csv ./data/2_images/`
 
-`$ ./HoG.R  --cells=4 --bins=9 -o ./data/3_features/HoG_04cells_9bins.csv ./data/2_images/`
+`$ ./HoG.R  --cells=4 --bins=9 -o ./data/3_features/HoG_04cells_09bins.csv ./data/2_images/`
 
 `$ ./HoG.R  --cells=9 --bins=9 -o ./data/3_features/HoG_09cells_09bins.csv ./data/2_images/`
 
