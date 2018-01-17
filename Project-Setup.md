@@ -1,4 +1,5 @@
-# Hardware & Configuration
+# Project Setup
+## Hardware & Configuration
 * Model Name:	Mac mini
 * Model Identifier:	Macmini7,1
 * Processor Name:	Intel Core i7
@@ -10,5 +11,3 @@
 * Memory:	8 GB
 * Boot ROM Version:	MM71.0220.B07
 * SMC Version (system):	2.24f32
-
-[back](README.md)
