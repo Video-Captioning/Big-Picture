@@ -25,7 +25,11 @@ Manually collect images to use as training examples
 ```
 
 --------
-## Configuration B -- (something else...)
+## Configuration B -- a brief action sequence
+
+### Files
+* great_catch.flv
+* Lucas_Kanade_optical_flow.py
 
 --------
 ## Configuration C -- (something else...)
